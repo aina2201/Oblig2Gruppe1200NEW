@@ -8,9 +8,6 @@
     src: url("assets/fonts/Lato-Bold.ttf");
 }
 
-* {
-    box-sizing: border-box;
-}
 
 body{
     margin: 0;
@@ -55,12 +52,9 @@ header > div{
     
 }
 
-main > #intro-container{
-
+#intro-container > p{
     background-color: #c5192d;
-    position: relative8;
-    z-index: 2;
-    
+    background-size: 50%;
 }
 
 li{

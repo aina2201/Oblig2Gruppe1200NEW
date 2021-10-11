@@ -15,59 +15,179 @@ h1{
     margin:0
 }
 
-body{
-    margin:0;
-    height: 100%;
-    width: 100%;
-    font-family: Lato, sans-serif;
+img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 h1, h2, h3{
     font-family: Montserrat, sans-serif;
 }
 
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 2.2rem;
+}
+
+p{
+    margin: auto;
+    max-width: 70ch;
+    line-height: 1.5;
+}
+
+body{
+    margin:0;
+    height: 100%;
+    width: 100%;
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    background-color: darkgrey;
+    
+}
+
 header{
     width:100%;
-    background: url("assets/img/studentsbg.png") center no-repeat;
+    background-image: url("assets/img/studentsbg.png");
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     color:white;
+    height: 65vh;
+    text-align: center;
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+header > *{
+    background-color: #c5192d;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    
+    
+    position: absolute;
+    
+    bottom: -4rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/*
+    box-shadow: 0 0 1px 0 darkgrey;
+    background-color: whitesmoke;
+*/
+main{
+    background-color: whitesmoke;
+    width: 70%;
+    margin: auto;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+article{
+    column-count: 2;
+    -webkit-column-width: 200px;
+   -moz-column-width: 200px;
+    column-width: 45%;
+    column-gap: 10%;
+    
+    padding:2rem;
+    
     
 }
 
-header > div{
+main > #intro-container{
+    
     background-color: #c5192d;
-    text-align: center;
-    margin:auto;
-    position: relative;
+    
+    z-index: 2;
+    
 }
 
+li{
+    list-style-type: none;
+    margin: 1rem;
+    
+    
+}
 
+li:nth-child(1){
+    list-style-type: "\1F64C";
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+li:nth-child(2){
+    list-style-type:"\1F3EB" ;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+li:nth-child(3){
+    list-style:"\1F4DA" ;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+footer{
+    margin: auto;
+    text-align: center;
+    
+}
 
 @media only screen and (max-width:600px) {
+    body{
+        font-size: 14px;
+        
+    }
+    header{
+        height: 55vh;;
+        background-size: cover;
+        top: 4rem;
+        
+    }
 
-    
+    header > * {
+        width: 95vw;
+    }
+    main,footer{
+        width: 95vw;
+    }
+
 }
 @media only screen and (max-width:960px) {
-    
-    
+    body{
+        font-size: 16px;
+        
+    }
+    main,footer{
+        width: 85%;
+    }
 }
 @media only screen and (min-width:960px) {
-    body{
-        font-size: 24px;
-    }
-    main{
+   
+    main, header > div, footer{
         width:70%;
         margin: auto;
         
     }
     
     header{
-        height: 65vh;
-    }
-
-    header > div{
-        width: 70%;
         
     }
+    header > div{
+        
+    }
+    
     
 }
