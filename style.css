@@ -7,6 +7,10 @@
     src: url("assets/fonts/Lato-Bold.ttf");
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h1{
     margin:0
 }
@@ -35,8 +39,6 @@ header > div{
     text-align: center;
     margin:auto;
     position: relative;
-    top: 4rem;
-    
 }
 
 

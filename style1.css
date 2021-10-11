@@ -8,6 +8,10 @@
     src: url("assets/fonts/Lato-Bold.ttf");
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding:0;
